@@ -21,6 +21,12 @@ case $lettre in
     [[:lower:]])
         echo "la lettre est en minuscule"
         ;;  
+    "a")
+        echo "oasoas"
+        ;;
+    b|B)
+        echo "bbbbbbbbb"
+        ;;
     *)
         echo "autre"
         ;;        
