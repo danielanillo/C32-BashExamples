@@ -1,12 +1,22 @@
 #!/bin/bash
 
-#1 Afficher un menu
-read "voulez-vous"
 
-#2 mettre le menu dans une fonction
+uneFonction1(){
+for ((i=0;i<$1;i++)) 
+do  
+echo -n " "
+done
+}
 
-#3 faire une boucle:
-##    -offrir 2 choix: Quitter(q)
-##     - ou appelez ./exercice2.sh(d)
+ for ((i=0;i<10;i++))
+ do
+    clear 
+    uneFonction1 $i 
+    if [[ $i -lt 9 ]]
+    then
+        echo "@"
+    else    echo "BOOM"
+    fi    
+    sleep 0.1
+done
 
-#4 A cjaque debut de boucle, afficher le menu
