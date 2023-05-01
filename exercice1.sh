@@ -8,9 +8,9 @@
 # 2 verifier si le mot existe en utilisant l'url
 # 3 affichier <a l'écran si le mot existe, ou pas
 
-read -p "entrez une mot: " monMot
+read -p "entrez une mot: " monMot #echo -n "entrez un mot : " saut de ligne read monMot
 Marche=`wget -qO - http://dictionary.objectif8.com/exists.php?word=$monMot`
-if [[ $Marche = 1 ]]
+if [[ $Marche -eq 1 ]]
 then
     echo "Ca marche"
 else
